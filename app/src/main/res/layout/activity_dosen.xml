@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.if17upnjatim.tifatulas3.DosenActivity">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Profil Dosen Teknik Informatika:"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:id="@+id/headerdosen"/>
+            <WebView
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:layout_below="@+id/headerdosen"
+                android:id="@+id/web"></WebView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="UNDER CONSCTRUCTION"
+                android:textAlignment="center"
+                android:textSize="45sp"
+                android:id="@+id/coba"
+                android:layout_below="@id/headerdosen"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="UNDER CONSCTRUCTION"
+                android:textAlignment="center"
+                android:textSize="45sp"
+                android:id="@+id/coba"
+                android:layout_below="@id/headerdosen"/>
+
+
+</LinearLayout>

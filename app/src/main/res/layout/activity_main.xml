@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.if17upnjatim.tifatulas3.MainActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrolll">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                        <com.synnapps.carouselview.CarouselView
+                            android:id="@+id/carouselView"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            app:fillColor="#FFFFFFFF"
+                            app:pageColor="#00000000"
+                            app:radius="6dp"
+                            app:slideInterval="3000"
+                            app:strokeColor="#FF777777"
+                            app:strokeWidth="1dp" />
+
+                        <LinearLayout
+                            android:id="@+id/menu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/carouselView"
+                            android:background="#de5c03"
+                            android:orientation="horizontal"
+                            android:weightSum="12">
+
+                                <Button
+                                    android:id="@+id/prodi"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="4"
+                                    android:text="Profil Progdi" />
+
+                                <Button
+                                    android:id="@+id/dosen"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="4"
+                                    android:text="Profil Dosen" />
+
+                                <Button
+                                    android:id="@+id/mhs"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="4"
+                                    android:text="Profil Mahasiswa" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/vismis"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/menu"
+                            android:text="Visi dan Misi Teknik Informatika Angkatan Tahun 2017"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/visi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/vismis"
+                            android:text="\nVisi: "
+                            android:textSize="17dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/isivis"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/visi"
+                            android:text="              Menjadikan mahasiswa Teknik Informatika angkatan tahun 2017 yang solid dan berjiwa sosial yang akan menjadi pioner pembangunan dengan tetap berdasarkan tri dharma perguruan tinggi yang berkarakter bela negara." />
+
+                        <TextView
+                            android:id="@+id/misi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/isivis"
+                            android:text="\nMisi: "
+                            android:textSize="17dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/isimis"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/misi"
+                            android:text="• Mengembangkan riset dan teknologi dalam bidang informatika.\n
+• Melakukan pengabdian kepada masyarakat dalam bidang informatika untuk kemajuan masyarakat.\n
+• Menjunjung nama Fakultas Ilmu Komputer dan Universitas Pembangunan Veteran JawaTimur baik dilingkup internal maupun eksternal" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/isimis"
+                            android:background="#de5c03"
+                            android:orientation="vertical">
+
+                                <TextView
+
+                                    android:id="@+id/jargon"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="Jargon Angkatan :"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/kre"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/jargon"
+                                    android:text="Kreatif !!!"
+                                    android:textAlignment="center"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold|italic" />
+
+                                <TextView
+                                    android:id="@+id/ino"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/kre"
+                                    android:text="Inovatif !!!"
+                                    android:textAlignment="center"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold|italic" />
+
+                                <TextView
+                                    android:id="@+id/ins"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/ino"
+                                    android:text="Inspiratif !!!"
+                                    android:textAlignment="center"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold|italic" />
+
+                                <TextView
+                                    android:id="@+id/yes"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/ins"
+                                    android:text="Yes Yes Yes !!!"
+                                    android:textAlignment="center"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold|italic" />
+                        </RelativeLayout>
+
+                </RelativeLayout>
+        </ScrollView>
+</RelativeLayout>
